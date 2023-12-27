@@ -10,12 +10,10 @@ public class ItemCollector : MonoBehaviour
     private int collectedItems = 0;
     
     private int coin = 0;
-    private int kiwi = 0;
-    private int orange = 0;
+    private int apple = 0;
     
     [SerializeField] private Text coinText;
-    [SerializeField] private Text kiwiText;
-    [SerializeField] private Text orangeText;
+    [SerializeField] private Text appleText;
 
     [SerializeField] private AudioSource collectionSoundEffect;
     
@@ -34,25 +32,12 @@ public class ItemCollector : MonoBehaviour
                 }
             }
 
-            if (collision.gameObject.CompareTag("Kiwi"))
+            if (collision.gameObject.CompareTag("Apple"))
             {
                 collectionSoundEffect.Play();
                 Destroy(collision.gameObject);
-                kiwi++;
-                kiwiText.text = "Kiwis: " + kiwi;
-                collectedItems++;
-                if (collectedItems >5)
-                {
-                    Destroy(GameObject.Find("FinalWall"));
-                }
-            }
-
-            if (collision.gameObject.CompareTag("Orange"))
-            {
-                collectionSoundEffect.Play();
-                Destroy(collision.gameObject);
-                orange++;
-                orangeText.text = "Oranges: " + orange;
+                apple++;
+                appleText.text = "Apple: " + apple;
                 collectedItems++;
                 if (collectedItems >5)
                 {

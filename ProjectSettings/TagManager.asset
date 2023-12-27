@@ -8,16 +8,17 @@ TagManager:
   - Kiwi
   - Orange
   - Trap
+  - Apple
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - BackGround
   - Water
   - UI
-  - Ground
-  - 
-  - 
+  - Objects
+  - Player
+  - Terrain
   - 
   - 
   - 
@@ -45,9 +46,15 @@ TagManager:
   - name: Background
     uniqueID: 3193679927
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: Background2
+    uniqueID: 641514557
+    locked: 0
+  - name: Objects
+    uniqueID: 2277362671
     locked: 0
   - name: Terrain
     uniqueID: 598803401
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
