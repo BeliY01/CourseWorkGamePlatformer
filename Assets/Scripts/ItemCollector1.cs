@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int totalItems = 33;
+    private int totalItems = 0;
     private int collectedItems = 0;
     
     private int coin = 0;
@@ -14,6 +14,7 @@ public class ItemCollector : MonoBehaviour
     
     [SerializeField] private Text coinText;
     [SerializeField] private Text appleText;
+    [SerializeField] private Text totalText;
 
     [SerializeField] private AudioSource collectionSoundEffect;
     
@@ -26,7 +27,7 @@ public class ItemCollector : MonoBehaviour
                 coin++;
                 coinText.text = "Coins: " + coin;
                 collectedItems++;
-                if (collectedItems >15)
+                if (collectedItems == 33)
                 {
                     Destroy(GameObject.Find("FinalWall"));
                 }
@@ -39,13 +40,14 @@ public class ItemCollector : MonoBehaviour
                 apple++;
                 appleText.text = "Apple: " + apple;
                 collectedItems++;
-                if (collectedItems >15)
+                if (collectedItems == 33)
                 {
                     Destroy(GameObject.Find("FinalWall"));
                 }
             }
-            
-            Debug.Log($"collected {collectedItems}");
+
+            totalText.text = "Total: " + collectedItems;
+            //Debug.Log($"collected {collectedItems}");
     }
     
 }
