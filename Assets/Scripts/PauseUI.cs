@@ -9,7 +9,9 @@ public class PauseUI : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
-     public void Update()
+    private int currentSceneIndex;
+
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -33,13 +35,15 @@ public class PauseUI : MonoBehaviour
 
     public void Pause()
     {
-        pauseMenuUI.SetActive(true); 
+        pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GamePaused = true;
     }
 
     public void LoadMenu()
     {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        PlayerPrefs.SetInt("SavedScene", currentSceneIndex);
         SceneManager.LoadScene("Main Menu");
     }
 
