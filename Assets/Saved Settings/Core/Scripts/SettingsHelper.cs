@@ -113,11 +113,11 @@ namespace SavedSettings
         {
             get
             {
-                return QualitySettings.masterTextureLimit;
+                return QualitySettings.globalTextureMipmapLimit;
             }
             set
             {
-                QualitySettings.masterTextureLimit = value;
+                QualitySettings.globalTextureMipmapLimit = value;
             }
         }
 

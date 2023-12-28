@@ -20,12 +20,12 @@ namespace SavedSettings.GUI
             options.Add(new Dropdown.OptionData("1/8"));
             dropdown.options = options;
             LoadValue();
-            dropdown.onValueChanged.AddListener(delegate { QualitySettings.masterTextureLimit = dropdown.value; });
+            dropdown.onValueChanged.AddListener(delegate { QualitySettings.globalTextureMipmapLimit = dropdown.value; });
         }
 
         public override void LoadValue()
         {
-            GetComponent<Dropdown>().value = QualitySettings.masterTextureLimit;
+            GetComponent<Dropdown>().value = QualitySettings.globalTextureMipmapLimit;
         }
     }
 }
