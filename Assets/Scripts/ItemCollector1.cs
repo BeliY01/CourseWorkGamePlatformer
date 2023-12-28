@@ -26,7 +26,7 @@ public class ItemCollector : MonoBehaviour
                 coin++;
                 coinText.text = "Coins: " + coin;
                 collectedItems++;
-                if (collectedItems >5)
+                if (collectedItems >15)
                 {
                     Destroy(GameObject.Find("FinalWall"));
                 }
@@ -39,7 +39,7 @@ public class ItemCollector : MonoBehaviour
                 apple++;
                 appleText.text = "Apple: " + apple;
                 collectedItems++;
-                if (collectedItems >5)
+                if (collectedItems >15)
                 {
                     Destroy(GameObject.Find("FinalWall"));
                 }

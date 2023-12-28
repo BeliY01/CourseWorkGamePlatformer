@@ -9,6 +9,7 @@ TagManager:
   - Orange
   - Trap
   - Apple
+  - Box
   layers:
   - Default
   - TransparentFX
@@ -49,12 +50,21 @@ TagManager:
   - name: Background2
     uniqueID: 641514557
     locked: 0
+  - name: Collectibles
+    uniqueID: 3831324039
+    locked: 0
   - name: Objects
     uniqueID: 2277362671
     locked: 0
-  - name: Terrain
-    uniqueID: 598803401
+  - name: Trees
+    uniqueID: 3051092613
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Grass
+    uniqueID: 346544721
+    locked: 0
+  - name: Terrain
+    uniqueID: 598803401
     locked: 0

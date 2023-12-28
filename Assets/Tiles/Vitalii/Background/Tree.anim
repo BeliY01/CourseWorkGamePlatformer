@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dead Flower
+  m_Name: Tree
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -909922621, guid: b9f845bf6f9e23e43a36328fce8cdee2, type: 3}
+      value: {fileID: -885656275, guid: 7edbe923210a69f4ab40dd68dd2df23d, type: 3}
     - time: 0.083333336
-      value: {fileID: -1855056526, guid: b9f845bf6f9e23e43a36328fce8cdee2, type: 3}
+      value: {fileID: -251559816, guid: 7edbe923210a69f4ab40dd68dd2df23d, type: 3}
     - time: 0.16666667
-      value: {fileID: -132997080, guid: b9f845bf6f9e23e43a36328fce8cdee2, type: 3}
+      value: {fileID: 1618652776, guid: 7edbe923210a69f4ab40dd68dd2df23d, type: 3}
     - time: 0.25
-      value: {fileID: 1466902178, guid: b9f845bf6f9e23e43a36328fce8cdee2, type: 3}
+      value: {fileID: -1606199098, guid: 7edbe923210a69f4ab40dd68dd2df23d, type: 3}
+    - time: 0.33333334
+      value: {fileID: -885656275, guid: 7edbe923210a69f4ab40dd68dd2df23d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,16 +52,17 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -909922621, guid: b9f845bf6f9e23e43a36328fce8cdee2, type: 3}
-    - {fileID: -1855056526, guid: b9f845bf6f9e23e43a36328fce8cdee2, type: 3}
-    - {fileID: -132997080, guid: b9f845bf6f9e23e43a36328fce8cdee2, type: 3}
-    - {fileID: 1466902178, guid: b9f845bf6f9e23e43a36328fce8cdee2, type: 3}
+    - {fileID: -885656275, guid: 7edbe923210a69f4ab40dd68dd2df23d, type: 3}
+    - {fileID: -251559816, guid: 7edbe923210a69f4ab40dd68dd2df23d, type: 3}
+    - {fileID: 1618652776, guid: 7edbe923210a69f4ab40dd68dd2df23d, type: 3}
+    - {fileID: -1606199098, guid: 7edbe923210a69f4ab40dd68dd2df23d, type: 3}
+    - {fileID: -885656275, guid: 7edbe923210a69f4ab40dd68dd2df23d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.26666668
+    m_StopTime: 0.35000002
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
